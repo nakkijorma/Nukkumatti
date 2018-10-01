@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">Nukkumatti</string>
+    <!--  Aloitusnäytön resurssit -->
     <string name="aloitusOtsikko">Tervetuloa Nukkumattiin!</string>
     <string name="aloitusTeksti">Sovellus mittaa unesi pituutta ja laatua. Merkkaa unesi määrä sovellukseen ja näet keskiarvon.</string>
+
+    <!-- Unimäärän syötön resurssit -->
+
+    <!-- Tilastotietojen resurssit -->
+
+    <!-- Historiatietojen resurssit -->
+
+    <!-- Todo Testi -->
 </resources>
