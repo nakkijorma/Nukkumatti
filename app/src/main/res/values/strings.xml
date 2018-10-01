@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Nukkumatti</string>
+    <string name="aloitus">Seuraa ja tilastoi unimääriäsi</string>
+    <string name="esittely">Seuraa ja tilastoi unimääriäsi</string>
 </resources>
