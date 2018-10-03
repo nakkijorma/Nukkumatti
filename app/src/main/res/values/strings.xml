@@ -5,10 +5,14 @@
     <string name="aloitusTeksti">Sovellus mittaa unesi pituutta ja laatua. Merkitse unimääräsi sovellukseen ja näet keskiarvon.</string>
 
     <!-- Unimäärän syötön resurssit -->
-
+    <string name="unimaaraOtsikko">Valitse päivämäärä</string>
+    <string name="unimaaraTunnit">Syötä tunnit:</string>
+    <string name="unimaaraLaheta">Tallenna</string>
+    <string name="unimaaraVihje">Esim. 7,5</string>
+    <string name="kalenterinAlku">09/01/2018</string>
     <!-- Tilastotietojen resurssit -->
 
     <!-- Historiatietojen resurssit -->
 
-    <!-- Todo Testi -->
+    <!-- Todo Testi - Poista valmiista  -->
 </resources>
