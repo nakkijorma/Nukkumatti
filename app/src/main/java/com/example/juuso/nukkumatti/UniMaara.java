@@ -17,7 +17,6 @@ public class UniMaara extends AppCompatActivity implements View.OnClickListener 
     private Button buttonLaheta;
     private CalendarView calendarView;
     private Long date;
-    private Long previousDate;
     private TextView naytaPVM;
     private Toast toastPVM;
     private Toast toastTallenna;
