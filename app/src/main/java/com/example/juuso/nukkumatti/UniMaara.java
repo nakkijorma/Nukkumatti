@@ -1,6 +1,5 @@
 package com.example.juuso.nukkumatti;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +19,8 @@ public class UniMaara extends AppCompatActivity implements View.OnClickListener 
         buttonLaheta.setOnClickListener(this);
     }
     @Override
+    // TODO - CalenderView-tiedon lukeminen ja muokkaus
+    // TODO - TextView-tiedon lukeminen ja mahd.muokkaus
 
     // Tämä kuuntelee Lähetä-nappia
     public void onClick(View view) {
