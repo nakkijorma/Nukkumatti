@@ -18,11 +18,11 @@ public class UniMaara extends AppCompatActivity implements View.OnClickListener 
         buttonLaheta = findViewById(R.id.buttonLaheta);
         buttonLaheta.setOnClickListener(this);
     }
-    @Override
     // TODO - CalenderView-tiedon lukeminen ja muokkaus
-    // TODO - TextView-tiedon lukeminen ja mahd.muokkaus
+    // TODO - TextView-tiedon lukeminen ja mahd. muokkaus
 
-    // Tämä kuuntelee Lähetä-nappia
+    // Tämä kuuntelee Lahetä-nappia
+    @Override
     public void onClick(View view) {
         // TODO - Tähän tietojen tallennus listaan.
     }
