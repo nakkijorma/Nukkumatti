@@ -1,6 +1,5 @@
 package com.example.juuso.nukkumatti;
 
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,8 +16,10 @@ public class UniMaara extends AppCompatActivity implements View.OnClickListener 
     private double tunnit; // tunnit pilkulla 7,5
     private Button buttonLaheta;
     private CalendarView calendarView;
-    private long date;
+    private Long date;
+    private Long previousDate;
     private TextView naytaPVM;
+    private Toast toastPVM;
     private Toast toastTallenna;
 
     @Override
@@ -31,10 +32,10 @@ public class UniMaara extends AppCompatActivity implements View.OnClickListener 
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
                 pvm = dayOfMonth + "/" + (month + 1) + "/" + year; //kuukausi Tammikuu == 0
-                Long date = calendarView.getDate();
+                date = calendarView.getDate();
                 pvmToast = date.toString();
-                naytaPVM.setText(pvmToast + ", " + dayOfMonth + "/" + (month + 1) + "/" + year + ", " + pvm); // TODO - pvmToast näyttää millisekunnit nykyisellä hetkellä
-                Toast toastPVM = Toast.makeText(getApplicationContext(),pvm,Toast.LENGTH_LONG);
+                naytaPVM.setText(pvmToast + ", " + pvm); // TODO - pvmToast näyttää millisekunnit nykyisellä hetkellä
+                toastPVM = Toast.makeText(getApplicationContext(),pvm,Toast.LENGTH_LONG);
                 toastPVM.setGravity(Gravity.CENTER_HORIZONTAL|Gravity.RIGHT, 0, 250);
                 toastPVM.show();
             }
