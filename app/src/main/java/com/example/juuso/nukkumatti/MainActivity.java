@@ -9,36 +9,36 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button button1;
-    private Button button2;
-    private Button button3;
+    private Button buttonSyote;
+    private Button buttonHistoria;
+    private Button buttonTilastot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button1 = findViewById(R.id.button1);
-        button2 = findViewById(R.id.button2);
-        button3 = findViewById(R.id.button3);
-        button1.setOnClickListener(this);
-        button2.setOnClickListener(this);
-        button3.setOnClickListener(this);
+        buttonSyote = findViewById(R.id.buttonSyote);
+        buttonHistoria = findViewById(R.id.buttonHistoria);
+        buttonTilastot = findViewById(R.id.buttonTilastot);
+        buttonSyote.setOnClickListener(this);
+        buttonHistoria.setOnClickListener(this);
+        buttonTilastot.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.button1:
+            case R.id.buttonSyote:
                 Intent intent1 = new Intent(this, UniMaara.class);
                 startActivity(intent1);
                 break;
-            case R.id.button2:
+            case R.id.buttonHistoria:
                 Intent intent2 = new Intent(this, Tilastot.class);
                 startActivity(intent2);
                 break;
-            case R.id.button3:
+            case R.id.buttonTilastot:
                 Intent intent3 = new Intent(this, Historia.class);
                 startActivity(intent3);
                 break;

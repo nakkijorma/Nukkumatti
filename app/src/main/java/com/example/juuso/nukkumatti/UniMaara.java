@@ -35,7 +35,7 @@ public class UniMaara extends AppCompatActivity implements View.OnClickListener 
                 pvmToast = date.toString();
                 naytaPVM.setText(pvmToast + ", " + pvm); // TODO - pvmToast näyttää millisekunnit nykyisellä hetkellä
                 toastPVM = Toast.makeText(getApplicationContext(),pvm,Toast.LENGTH_LONG);
-                toastPVM.setGravity(Gravity.CENTER_HORIZONTAL|Gravity.RIGHT, 0, 250);
+                toastPVM.setGravity(Gravity.CENTER_HORIZONTAL|Gravity.RIGHT, 0, 200);
                 toastPVM.show();
             }
         });

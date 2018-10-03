@@ -3,6 +3,9 @@
     <!--  Aloitusnäytön resurssit -->
     <string name="aloitusOtsikko">Tervetuloa Nukkumattiin!</string>
     <string name="aloitusTeksti">Sovellus mittaa unesi pituutta ja laatua. Merkitse unimääräsi sovellukseen ja näet keskiarvon.</string>
+    <string name="buttonSyote">Syötä unimäärä</string>
+    <string name="buttonHistoria">Historia</string>
+    <string name="buttonTilastot">Tilastot - Sleep</string>
 
     <!-- Unimäärän syötön resurssit -->
     <string name="unimaaraOtsikko">Valitse päivämäärä</string>
