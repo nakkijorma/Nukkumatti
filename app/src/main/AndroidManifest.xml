@@ -16,9 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UniMaara" />
-        <activity android:name=".Tilastot" />
-        <activity android:name=".Historia"></activity>
+        <activity android:name=".UniMaara"
+        android:parentActivityName = "MainActivity">
+        </activity>
+        <activity android:name=".Tilastot"
+            android:parentActivityName = "MainActivity">
+        </activity>
+        <activity android:name=".Historia"
+            android:parentActivityName = "MainActivity">
+
+    </activity>
     </application>
 
 </manifest>
