@@ -10,6 +10,9 @@
     <string name="unimaaraLaheta">Tallenna</string>
     <string name="unimaaraVihje">Esim. 7,5</string>
     <string name="kalenterinAlku">09/01/2018</string>
+    <string name="toast_tallenna">Kiitos! Tallennettu.</string>
+    <string name="syote_merkit">0123456789,</string>
+
     <!-- Tilastotietojen resurssit -->
 
     <!-- Historiatietojen resurssit -->

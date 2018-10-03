@@ -44,7 +44,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/unimaaraLaheta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,11 +61,13 @@
         android:layout_marginRight="16dp"
         android:ems="10"
         android:hint="@string/unimaaraVihje"
-        android:inputType="numberDecimal"
+        android:inputType="number"
+        android:digits="@string/syote_merkit"
+        android:imeOptions="actionDone"
         app:layout_constraintBaseline_toBaselineOf="@+id/unimaaraTunnit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/unimaaraTunnit" />
+        app:layout_constraintStart_toEndOf="@+id/unimaaraTunnit" /> <!-- imeOptions:actionDone piilottaa keyboardin -->
 
     <TextView
         android:id="@+id/unimaaraTunnit"
@@ -80,5 +82,20 @@
         app:layout_constraintEnd_toStartOf="@+id/unimaaraSyote"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/naytaPVM" />
+
+    <TextView
+        android:id="@+id/naytaPVM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Pvm in long"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
 </android.support.constraint.ConstraintLayout>
