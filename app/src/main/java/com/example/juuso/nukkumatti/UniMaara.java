@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.ArrayList;
+
 public class UniMaara extends AppCompatActivity implements View.OnClickListener {
     private String pvm; // pvm muotoa 22/05/2018
     private double tunnit; // tunnit pilkulla 7,5
@@ -26,4 +28,8 @@ public class UniMaara extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View view) {
         // TODO - Tähän tietojen tallennus listaan.
     }
-}
+
+
+
+    }
+
