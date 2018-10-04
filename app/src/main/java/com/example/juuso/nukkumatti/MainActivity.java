@@ -37,11 +37,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent1);
                 break;
             case R.id.buttonHistoria:
-                Intent intent2 = new Intent(this, Tilastot.class);
+                Intent intent2 = new Intent(this, Historia.class);
                 startActivity(intent2);
                 break;
             case R.id.buttonTilastot:
-                Intent intent3 = new Intent(this, Historia.class);
+                Intent intent3 = new Intent(this, Tilastot.class);
                 startActivity(intent3);
                 break;
             default:

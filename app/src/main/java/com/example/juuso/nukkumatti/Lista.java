@@ -11,7 +11,7 @@ class Lista {
         return ourInstance;
     }
 
-    private Lista() {
+    public void luoLista() {
         oliot = new ArrayList<>();
         oliot.add(new Olio("3/10/2018", 9));
         oliot.add(new Olio("3/11/2018", 7.2));
