@@ -2,9 +2,9 @@ package com.example.juuso.nukkumatti;
 
 public class Olio {
     private String pvm;
-    private int tunnit;
+    private double tunnit;
 
-    public Olio(String pvm, int tunnit) {
+    public Olio(String pvm, double tunnit) {
         this.pvm = pvm;
         this.tunnit = tunnit;
     }
@@ -13,7 +13,7 @@ public class Olio {
         return this.pvm;
     }
 
-    public int getTunnit() {
+    public double getTunnit() {
         return this.tunnit;
     }
 

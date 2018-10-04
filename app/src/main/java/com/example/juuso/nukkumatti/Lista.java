@@ -14,7 +14,7 @@ class Lista {
     private Lista() {
         oliot = new ArrayList<>();
         oliot.add(new Olio("3/10/2018", 9));
-        oliot.add(new Olio("3/11/2018", 7));
+        oliot.add(new Olio("3/11/2018", 7.2));
     }
 
     public List<Olio> getOliot() {
