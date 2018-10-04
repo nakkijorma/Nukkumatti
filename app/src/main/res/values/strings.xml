@@ -3,6 +3,9 @@
     <!--  Aloitusnäytön resurssit -->
     <string name="aloitusOtsikko">Tervetuloa Nukkumattiin!</string>
     <string name="aloitusTeksti">Sovellus mittaa unesi pituutta ja laatua. Merkitse unimääräsi sovellukseen ja näet keskiarvon.</string>
+    <string name="buttonSyote">Syötä unimäärä</string>
+    <string name="buttonHistoria">Historia</string>
+    <string name="buttonTilastot">Tilastot - Sleep</string>
 
     <!-- Unimäärän syötön resurssit -->
     <string name="unimaaraOtsikko">Valitse päivämäärä</string>
@@ -10,6 +13,9 @@
     <string name="unimaaraLaheta">Tallenna</string>
     <string name="unimaaraVihje">Esim. 7,5</string>
     <string name="kalenterinAlku">09/01/2018</string>
+    <string name="toast_tallenna">Kiitos! Tallennettu.</string>
+    <string name="syote_merkit">0123456789,</string>
+
     <!-- Tilastotietojen resurssit -->
 
     <!-- Historiatietojen resurssit -->
