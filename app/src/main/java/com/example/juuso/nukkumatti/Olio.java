@@ -18,6 +18,6 @@ public class Olio {
     }
 
     public String toString() {
-        return this.pvm + ": " + this.tunnit + "h";
+        return this.pvm + "\n" + this.tunnit + " tuntia";
     }
 }
