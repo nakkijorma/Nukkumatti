@@ -19,6 +19,8 @@ allprojects {
     repositories {
         google()
         jcenter()
+        // Ohjeissa oli käsky lisätä
+        maven { url 'https://maven.google.com' }
     }
 }
 

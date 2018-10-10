@@ -55,47 +55,57 @@
         android:id="@+id/unimaaraSyote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:digits="@string/syote_merkit"
         android:ems="10"
         android:hint="@string/unimaaraVihje"
-        android:inputType="number"
-        android:digits="@string/syote_merkit"
         android:imeOptions="actionDone"
-        app:layout_constraintBaseline_toBaselineOf="@+id/unimaaraTunnit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/unimaaraTunnit" /> <!-- imeOptions:actionDone piilottaa keyboardin -->
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/naytaPVM" /> <!-- imeOptions:actionDone piilottaa keyboardin -->
 
     <TextView
-        android:id="@+id/unimaaraTunnit"
+        android:id="@+id/tunnitOhje"
         android:layout_width="wrap_content"
-        android:layout_height="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/unimaaraTunnit"
-        app:layout_constraintBottom_toTopOf="@+id/buttonLaheta"
-        app:layout_constraintEnd_toStartOf="@+id/unimaaraSyote"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/naytaPVM" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/unimaaraVihje"
+        app:layout_constraintBottom_toBottomOf="@+id/fiilisSyote"
+        app:layout_constraintStart_toStartOf="@+id/unimaaraSyote"
+        app:layout_constraintTop_toBottomOf="@+id/unimaaraSyote" />
 
     <TextView
         android:id="@+id/naytaPVM"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
-        android:layout_marginLeft="17dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Pvm in long"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <EditText
+        android:id="@+id/fiilisSyote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/unimaaraSyote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/unimaaraSyote" />
+
+    <TextView
+        android:id="@+id/fiilisOhje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/fiilisVihje"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tunnitOhje"
+        app:layout_constraintStart_toStartOf="@+id/fiilisSyote" />
 
 </android.support.constraint.ConstraintLayout>

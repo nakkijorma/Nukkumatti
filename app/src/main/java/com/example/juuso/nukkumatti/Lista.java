@@ -3,22 +3,17 @@ package com.example.juuso.nukkumatti;
 import java.util.ArrayList;
 import java.util.List;
 
-class Lista {
-    private List<Olio> oliot;
-    private static final Lista ourInstance = new Lista();
+public class Lista {
+    public ArrayList<Olio> oliot;
 
-    static Lista getInstance() {
-        return ourInstance;
-    }
-
-    public void luoLista() {
+    public Lista() {
         oliot = new ArrayList<>();
         oliot.add(new Olio("3/10/2018", 9));
         oliot.add(new Olio("3/11/2018", 7.2));
     }
 
-    public List<Olio> getOliot() {
+    public ArrayList<Olio> getOliot() {
         return oliot;
-
     }
+
 }

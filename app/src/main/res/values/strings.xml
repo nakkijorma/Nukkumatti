@@ -6,19 +6,26 @@
     <string name="buttonSyote">Syötä unimäärä</string>
     <string name="buttonHistoria">Historia</string>
     <string name="buttonTilastot">Tilastot - Sleep</string>
+    <string name="buttonHistoriaRoom">Historia - Room</string>
 
     <!-- Unimäärän syötön resurssit -->
     <string name="unimaaraOtsikko">Valitse päivämäärä</string>
     <string name="unimaaraTunnit">Syötä tunnit:</string>
     <string name="unimaaraLaheta">Tallenna</string>
     <string name="unimaaraVihje">Esim. 7.5</string>
+    <string name="fiilisVihje">Fiilikset herätessäsi?</string>
     <string name="kalenterinAlku">09/01/2018</string>
-    <string name="toast_tallenna">Kiitos! Tallennettu.</string>
     <string name="syote_merkit">0123456789.</string>
+    <string name="toast_tallenna">Kiitos! Tallennettu.</string>
+    <string name="toast_tyhjatKentat">Muistithan klikata kalenterista päivämäärän ja täyttää kaikki kentät!</string>
+    <string name="toast_historia_tyhjennetty">Historia tyhjennetty</string>
+    <string name="toast_esim_lista_ladattu">Esimerkkilista ladattu</string>
 
     <!-- Tilastotietojen resurssit -->
 
     <!-- Historiatietojen resurssit -->
+    <string name="menu_tyhjenna_historia">Tyhjennä historia</string>
+    <string name="menu_lataa_esim_lista">Lataa esimerkit</string>
 
     <!-- Todo Testi - Poista valmiista  -->
 </resources>

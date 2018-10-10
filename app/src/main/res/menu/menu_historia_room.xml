@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/tyhjenna_historia"
+        android:title="@string/menu_tyhjenna_historia"
+        app:showAsAction="ifRoom"
+        ></item>
+    <item
+        android:id="@+id/lataa_esim_lista"
+        android:title="@string/menu_lataa_esim_lista"
+        app:showAsAction="never"
+        ></item>
+</menu>

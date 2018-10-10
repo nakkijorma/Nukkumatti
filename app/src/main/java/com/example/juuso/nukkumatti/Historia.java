@@ -13,8 +13,8 @@ public class Historia extends AppCompatActivity {
         setContentView(R.layout.activity_historia);
 
         ListView lv = findViewById(R.id.listview);
-
-        lv.setAdapter(new ArrayAdapter<Olio>(this, android.R.layout.simple_list_item_1, Lista.getInstance().getOliot()));
+        Lista tulostus = new Lista();
+        lv.setAdapter(new ArrayAdapter<Olio>(this, android.R.layout.simple_list_item_1, tulostus.getOliot()));
 
 
 
