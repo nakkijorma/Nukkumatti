@@ -12,11 +12,15 @@ import java.util.List;
 public class UniTilastoViewModel extends AndroidViewModel {
     private UniRepository repository;
     private LiveData<List<UniTilasto>> allUniTilastot;
+    private LiveData<List<UniTilasto>> allUniTunnit;
+    private double avgTunnit;
 
     public UniTilastoViewModel(@NonNull Application application) {
         super(application);
         repository = new UniRepository(application);
         allUniTilastot = repository.getAllUniTilastot();
+        allUniTunnit = repository.getAllUniTunnit();
+        avgTunnit = repository.getAvgTunnit();
     }
 
     public void insert(UniTilasto uniTilasto) {
@@ -38,5 +42,11 @@ public class UniTilastoViewModel extends AndroidViewModel {
 
     public LiveData<List<UniTilasto>> getAllUniTilastot() {
         return allUniTilastot;
+    }
+
+    public LiveData<List<UniTilasto>> getAllUniTunnit() { return  allUniTunnit; }
+
+    public double getAvgTunnit() {
+        return avgTunnit;
     }
 }

@@ -22,9 +22,6 @@
         <activity android:name=".Tilastot"
             android:parentActivityName = "MainActivity">
         </activity>
-        <activity android:name=".Historia"
-            android:parentActivityName = "MainActivity">
-        </activity>
         <activity android:name=".HistoriaRoom"
             android:parentActivityName=".MainActivity">
         </activity>

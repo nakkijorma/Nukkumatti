@@ -56,13 +56,17 @@ public class UniMaara extends AppCompatActivity {
                 double tunnit = Double.parseDouble(tunnitString);
                 fiilis = kerroFiilis.getText().toString();
 
-                if (pvm.trim().isEmpty() || tunnitString.trim().isEmpty()) {
+                if (pvm.trim().isEmpty() || tunnitString.length() <1 || fiilis.trim().isEmpty() ) {
                     toastMessage(R.string.toast_tyhjatKentat);
                     return;
                 }
 
                 UniTilasto uniTilasto = new UniTilasto(pvm, tunnit, fiilis);
                 uniTilastoViewModel.insert(uniTilasto);
+
+                valittuPvm.setText("");
+                nukututTunnit.setText("");
+                kerroFiilis.setText("");
 
                 toastMessage(R.string.toast_tallenna);
             }

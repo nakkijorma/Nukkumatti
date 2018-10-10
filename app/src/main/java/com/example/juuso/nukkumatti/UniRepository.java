@@ -13,12 +13,16 @@ import java.util.List;
 public class UniRepository {
     private UniTilastoDao uniTilastoDao;
     private LiveData<List<UniTilasto>> allUniTilastot;
+    private LiveData<List<UniTilasto>> allUniTunnit;
+    private double avgTunnit;
 
     public UniRepository(Application application) {
         AppDatabase database = AppDatabase.getInstance(application);
         uniTilastoDao = database.uniTilastoDao();
         allUniTilastot = uniTilastoDao.getAll();
-    }
+        allUniTunnit = uniTilastoDao.getTunnitListaan();
+        avgTunnit = uniTilastoDao.getAverageOfTunnit();
+    };
 
 
     // API that repository exposes outside
@@ -40,8 +44,12 @@ public class UniRepository {
         new DeleteAllUniTilastoAsyncTask(uniTilastoDao).execute();
     }
 
-    public LiveData<List<UniTilasto>> getAllUniTilastot() {
-        return allUniTilastot;
+    public LiveData<List<UniTilasto>> getAllUniTilastot() { return allUniTilastot; }
+
+    public LiveData<List<UniTilasto>> getAllUniTunnit() { return  allUniTunnit; }
+
+    public double getAvgTunnit() {
+        return avgTunnit;
     }
 
     private static class InsertUniTilastoAsyncTask extends AsyncTask<UniTilasto, Void, Void> {

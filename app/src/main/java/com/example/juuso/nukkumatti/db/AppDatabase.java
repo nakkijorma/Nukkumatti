@@ -20,11 +20,9 @@ public abstract class AppDatabase extends RoomDatabase {
         if (instance == null) {
             instance =
                     Room.databaseBuilder(context.getApplicationContext(), AppDatabase.class, "unitilasto_database")
-                    // TODO - Don't allow to run in main thread
                             // If version number is increased this tells how to migrate
                             .fallbackToDestructiveMigration()
                             .addCallback(roomCallback)
-                    // TODO - .allowMainThreadQueries()
                     .build();
         }
         return instance;

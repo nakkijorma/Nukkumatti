@@ -35,7 +35,15 @@ public interface UniTilastoDao {
     void deleteAll();
 
     // TODO - hae tuntimäärät laskentaa varten
-    @Query("select")
-    LiveData<List<UniTilasto>> getTunnit();
+    @Query("select * from unitilasto_table where tunnit <=25 ")
+    LiveData<List<UniTilasto>> getTunnitListaan();
+
+    // Laskee rivien määrän
+    @Query("Select COUNT(tunnit) from unitilasto_table")
+    int getCountOfTunnit();
+
+    // TODO - laskee tuntien keskiarvon
+    @Query("Select avg(tunnit) from unitilasto_table")
+    double getAverageOfTunnit();
 
 }

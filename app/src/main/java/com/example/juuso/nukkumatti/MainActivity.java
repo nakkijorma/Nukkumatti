@@ -14,7 +14,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button buttonSyote;
     private Button buttonHistoria;
     private Button buttonTilastot;
-    private Button buttonHistoriaRoom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +23,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonSyote = findViewById(R.id.buttonSyote);
         buttonHistoria = findViewById(R.id.buttonHistoria);
         buttonTilastot = findViewById(R.id.buttonTilastot);
-        buttonHistoriaRoom = findViewById(R.id.buttonHistoriaRoom);
         buttonSyote.setOnClickListener(this);
         buttonHistoria.setOnClickListener(this);
         buttonTilastot.setOnClickListener(this);
-        buttonHistoriaRoom.setOnClickListener(this);
 
     }
 
@@ -40,16 +37,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent1);
                 break;
             case R.id.buttonHistoria:
-                Intent intent2 = new Intent(this, Historia.class);
+                Intent intent2 = new Intent(this, HistoriaRoom.class);
                 startActivity(intent2);
                 break;
             case R.id.buttonTilastot:
                 Intent intent3 = new Intent(this, Tilastot.class);
                 startActivity(intent3);
                 break;
-            case R.id.buttonHistoriaRoom:
-                Intent intent4 = new Intent(this, HistoriaRoom.class);
-                startActivity(intent4);
             default:
                 break;
 

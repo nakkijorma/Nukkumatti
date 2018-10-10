@@ -59,7 +59,6 @@
         android:layout_marginTop="8dp"
         android:digits="@string/syote_merkit"
         android:ems="10"
-        android:hint="@string/unimaaraVihje"
         android:imeOptions="actionDone"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
