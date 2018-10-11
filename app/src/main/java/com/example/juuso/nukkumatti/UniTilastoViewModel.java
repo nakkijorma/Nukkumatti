@@ -19,8 +19,8 @@ public class UniTilastoViewModel extends AndroidViewModel {
         super(application);
         repository = new UniRepository(application);
         allUniTilastot = repository.getAllUniTilastot();
-        allUniTunnit = repository.getAllUniTunnit();
-        avgTunnit = repository.getAvgTunnit();
+        // allUniTunnit = repository.getAllUniTunnit();
+        // avgTunnit = repository.getAvgTunnit();
     }
 
     public void insert(UniTilasto uniTilasto) {

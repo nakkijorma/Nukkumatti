@@ -25,7 +25,7 @@ public class UniTilastoAdapter extends RecyclerView.Adapter<UniTilastoAdapter.Un
 
     @Override
     public void onBindViewHolder(@NonNull UnitilastoHolder holder, int position) {
-        UniTilasto  currentUniTilasto = uniTilastos.get(position);
+        UniTilasto currentUniTilasto = uniTilastos.get(position);
         holder.textViewPvm.setText(currentUniTilasto.getPvm());
         holder.textViewTunnit.setText(String.valueOf(currentUniTilasto.getTunnit()));
         holder.textViewFiilis.setText((currentUniTilasto.getFiilis()));

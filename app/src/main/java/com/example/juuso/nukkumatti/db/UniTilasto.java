@@ -16,6 +16,7 @@ public class UniTilasto {
     @ColumnInfo(name = "pvm" )
     private String pvm; // TODO - Muuta String päivämäärä arvoksis
 
+    @NonNull
     @ColumnInfo(name = "tunnit")
     private double tunnit;
 

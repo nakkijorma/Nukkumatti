@@ -20,9 +20,9 @@ public class UniRepository {
         AppDatabase database = AppDatabase.getInstance(application);
         uniTilastoDao = database.uniTilastoDao();
         allUniTilastot = uniTilastoDao.getAll();
-        allUniTunnit = uniTilastoDao.getTunnitListaan();
-        avgTunnit = uniTilastoDao.getAverageOfTunnit();
-    };
+        // allUniTunnit = uniTilastoDao.getTunnitListaan();
+        // avgTunnit = uniTilastoDao.getAvgTunnit();
+    }
 
 
     // API that repository exposes outside
